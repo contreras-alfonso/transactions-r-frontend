@@ -55,13 +55,7 @@ export const ContainerTableCustomer = ({
                     <th className="font-semibold text-sm pb-5">DNI</th>
                     <th className="font-semibold text-sm pb-5">Names</th>
                     <th className="font-semibold text-sm pb-5">Last names</th>
-                    {/* <th className="font-semibold text-sm">Birthdate</th> */}
-                    {/* <th className="font-semibold text-sm py-3">Phone Number</th> */}
-                    {/* <th className="font-semibold text-sm">Email</th> */}
                     <th className="font-semibold text-sm pb-5">Bank</th>
-                    {/* <th className="font-semibold text-sm">
-                      Account Number or CCI number
-                    </th> */}
                     <th className="font-semibold text-sm pb-5">Transactions</th>
                   </tr>
                 </thead>
@@ -76,21 +70,9 @@ export const ContainerTableCustomer = ({
                       <td className="text-sm text-center px-5 py-3 mb-2">
                         {e?.last_names}
                       </td>
-                      {/* <td className="text-sm text-center px-3 py-3">
-                        {e?.birthdate}
-                      </td> */}
-                      {/* <td className="text-sm text-center px-3 py-3">
-                        {e?.phone}
-                      </td> */}
-                      {/* <td className="text-sm text-center px-3 py-3">
-                        {e.email}
-                      </td> */}
                       <td className="text-sm text-center px-5 py-3 mb-2">
                         {e?.bank}
                       </td>
-                      {/* <td className="text-sm text-center px-3 py-3">
-                        {e?.cci_number}
-                      </td> */}
                       <td className="min-w-44 flex items-center justify-center"><Link to={`transactions/customer/${e?.id}`} className="border-[1px] border-dashed border-emerald-600 rounded-lg py-3 px-5 text-black text-xs hover:bg-emerald-500 duration-300 max-lg:w-full my-1 hover:text-white hover:border-solid"><i className="fa-solid fa-sack-dollar"></i> Show Transactions</Link></td>
                     </tr>
                   ))}
