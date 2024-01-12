@@ -43,7 +43,7 @@ export const ContainerTableCustomer = ({
         />
       </div>
 
-      <h2 className="text-center font-black uppercase text-sm w-full">Customer List</h2>
+      <h2 className="text-center font-black uppercase text-sm w-full">Customers List</h2>
 
       {!loading ? (
         <>

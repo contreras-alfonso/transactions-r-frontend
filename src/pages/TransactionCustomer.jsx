@@ -39,15 +39,15 @@ export const TransactionCustomer = () => {
         </Link>
       </div>
 
-      <div className="flex max-md:flex-col gap-5">
-        <div className="max-sm:w-full sm:w-full lg:w-3/12  w-3/12 flex flex-col justify-center">
+      <div className="flex max-lg:flex-col gap-5">
+        <div className="max-lg:w-full sm:w-full lg:w-4/12  w-3/12 flex flex-col justify-center">
          <CardCustomerInformation dataCustomer={dataCustomer}/>
 
           <CardTotalTransactions  totalTransactions={totalTransactions}/>
 
         </div>
 
-        <div className="max-sm:w-full sm:w-full lg:w-9/12 w-9/12">
+        <div className="max-lg:w-full sm:w-full lg:w-8/12 w-9/12">
           <ContainerTableTransactionCustomer page={page} setPage={setPage} customerTransactions={dataCustomer} dataCustomer={dataCustomer} setDataCustomer={setDataCustomer} id={id}/>
         </div>
       </div>

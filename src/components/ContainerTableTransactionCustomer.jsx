@@ -7,9 +7,8 @@ import { ModalDetailTransaction } from "./ModalDetailTransaction";
 
 export const ContainerTableTransactionCustomer = ({
   customerTransactions,
-  page,
+  page, 
   setPage,
-  dataCustomer,
   setDataCustomer,
   id,
 }) => {
@@ -78,7 +77,7 @@ export const ContainerTableTransactionCustomer = ({
                     <td className="text-sm text-center px-3 py-3">
                       {e.operation_category.category_name}
                     </td>
-                    <td>
+                    <td className="px-3 flex items-center justify-center">
                       <button onClick={()=>{setModalDetailTransaction(true); setTransaction(e)}} className="min-w-36 bg-emerald-500 rounded-lg py-3 px-5 text-white text-xs hover:bg-emerald-600 duration-300 max-sm:w-full flex items-center justify-center gap-2 ">
                         <i className="fa-solid fa-eye"></i>
                         <span>View Details</span>
